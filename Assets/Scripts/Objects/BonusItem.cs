@@ -4,7 +4,7 @@ using TMPro;
 
 public class BonusItem : MonoBehaviour, IClickable
 {
-    public static event Action<int> OnBonusReleased;
+    public static Action<int> OnBonusReleased;
 
     [SerializeField]
     int amount = 5;
@@ -25,13 +25,14 @@ public class BonusItem : MonoBehaviour, IClickable
 
     public void LeftClick()
     {
-        OnBonusReleased(amount);
+        OnBonusReleased?.Invoke(amount);
         Destroy(this.gameObject);
+
     }
 
     public void RightClick()
     {
-        OnBonusReleased(amount);
+        OnBonusReleased?.Invoke(amount);
         Destroy(this.gameObject);
     }
 

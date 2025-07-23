@@ -4950,7 +4950,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23a9c1b40468e4da2aa765ff39e265db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  amount: 30
+  amount: 100
   cost: 0
 --- !u!114 &3272723326323369098
 MonoBehaviour:

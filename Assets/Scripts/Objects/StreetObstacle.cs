@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 [RequireComponent(typeof(TimeSelfDestructor))]
@@ -10,6 +11,7 @@ public class StreetObstacle : MonoBehaviour, IClickable
 
     TimeSelfDestructor timeBomb;
 
+    public static Action<int> OnPointsSpend;
 
     private void Start()
     {
@@ -19,6 +21,7 @@ public class StreetObstacle : MonoBehaviour, IClickable
     public void LeftClick()
     {
         timeBomb.AddTime(30);
+        OnPointsSpend?.Invoke(cost);
     }
 
     public void RightClick()

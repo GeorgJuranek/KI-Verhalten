@@ -44,6 +44,9 @@ public class OnClickCreator : MonoBehaviour
     bool hasDebugPointsGeneration = false;
 
 
+    public static Action<int> OnSpendPoints;
+
+
     private void OnEnable()
     {
         PlayerInput.OnRightClick += RightClickLogic;
@@ -149,6 +152,8 @@ public class OnClickCreator : MonoBehaviour
             {
                 StartCoroutine(MakeInvisibleForTime(preview.GetComponentInChildren<Renderer>(), 0.1f));
                 clickedObject.GetComponent<IClickable>().LeftClick();
+
+                //OnSpendPoints?.Invoke(click.Cost);
                 pointsKeeper.Decrease(click.Cost);
             }
             else
@@ -160,7 +165,9 @@ public class OnClickCreator : MonoBehaviour
         {
             if (pointsKeeper.DecreaseCheck(toCreateOnClick.Cost))
             {
+                OnSpendPoints?.Invoke(toCreateOnClick.Cost);
                 pointsKeeper.Decrease(toCreateOnClick.Cost);
+
                 StartCoroutine(MakeInvisibleForTime(preview.GetComponentInChildren<Renderer>(), 0.1f));
                 GameObject.Instantiate(toCreateOnClick.RealObject, currentHit.point, toCreateOnClick.PreviewObject.transform.rotation);
             }
