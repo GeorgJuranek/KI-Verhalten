@@ -61,7 +61,7 @@ public class CongestedCarsObserver : MonoBehaviour
         if (congestedCarCount > 0)
         {
             float basePoints = congestedCarCount;
-            float bonus = Mathf.Floor(congestedCarCount / 5f); // für je 5 Autos +1 Bonus
+            float bonus = Mathf.Floor(congestedCarCount / 3f); // für je 3 Autos +1 Bonus
             float total = basePoints + bonus;
             CurrentFloatingPoints += total * Time.deltaTime;
         }

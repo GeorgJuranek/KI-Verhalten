@@ -28,7 +28,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 416294}
@@ -144,7 +144,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.37542608, y: 0.8965644, z: 1.7869772}
+  m_Size: {x: 0.72, y: 0.8965644, z: 1.81}
   m_Center: {x: 0.00402838, y: 0.40954897, z: 0.011902492}
 --- !u!114 &2513687726514511669
 MonoBehaviour:
@@ -190,7 +190,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeTillDestroy: 30
-  highScore: {fileID: 0}
   positiveEffectParticleSystem: {fileID: 5490018301495064759}
 --- !u!54 &6216972590655470253
 Rigidbody:
@@ -244,7 +243,7 @@ GameObject:
   - component: {fileID: 427341297940997840}
   - component: {fileID: 1369239883248081258}
   - component: {fileID: 2383433853943749794}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Physics
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -260,7 +259,7 @@ Transform:
   m_GameObject: {fileID: 731981314604785768}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: -47.9617, y: 0.6129998, z: 6.862727}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -335,7 +334,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.5, y: 1, z: 0.5}
+  m_Size: {x: 0.77, y: 1, z: 0.14}
   m_Center: {x: 0, y: 0, z: -0.000015258789}
 --- !u!1 &5098612626057310032
 GameObject:
