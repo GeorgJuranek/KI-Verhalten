@@ -2,7 +2,7 @@
 
 | 💡 **Conception** | 🧨 **Timeframe**                   | ⚙️ **Technical Stack** |
 |----------------|---------------------------------|---------------------|
-| Georg Juranek  | 2 Month<br>(SAE Sem2)     | `Unity`<br>`Flocking`<br>`State Machine`<br>`RTS-Style Logic`|
+| Georg Juranek  | 2 Months<br>(SAE Sem2)     | `Unity`<br>`Flocking`<br>`State Machine`<br>`RTS-Style Logic`|
 
 ## Hedgehog’s Dilemma
 
