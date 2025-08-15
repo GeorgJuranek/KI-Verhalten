@@ -1,4 +1,9 @@
 # KI-Verhalten
+
+| 💡 **Conception** | 🧨 **Timeframe**                   | ⚙️ **Technical Stack** |
+|----------------|---------------------------------|---------------------|
+| Georg Juranek  | 2 Month<br>(SAE Sem2)     | `Unity`<br>`Flocking`<br>`State Machine`<br>`RTS-Style Logic`|
+
 ## Hedgehog’s Dilemma
 
 
@@ -10,6 +15,9 @@ Verschiedene Fahrzeugtypen wie SUVs, Sportwagen und LKWs erzeugen unterschiedlic
 "Hedgehog’s Dilemma" is a playable simulation in which players control a traffic jam by strategically placing construction site elements to deliberately obstruct the flow of traffic. The vehicles act as autonomous agents with individual behavior—they push, cut each other off, and cause collisions. This dynamic creates traffic jams, to which further elements can be added or extended.
 Different types of vehicles, such as SUVs, sports cars, and trucks, create different conflicts in the system and increase its complexity. The project addresses the tension between individuality and collective movement, and its title refers to Schopenhauer's parable on social distance.
 
+<p>
+  <a href="https://youtu.be/JJ3xkiuNrME" target="_blank" rel="noopener noreferrer">Watch Video</a>
+</p>
 <p>
   <a href="https://georg-juranek.itch.io/hedgehogs-dilemma" target="_blank" rel="noopener noreferrer">Play Game</a>
 </p>
